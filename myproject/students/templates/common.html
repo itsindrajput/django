@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>{{title}} Page</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href={% url 'home' %}>Home</a></li>
+        <li><a href={% url 'about' %}>About</a></li>
+        <li><a href={% url 'contact' %}>Contact</a></li>
+      </ul>
+    </nav>
+
+    {% block content %}
+    
+    
+    {% endblock %}
+
+    <footer>
+      <ul>
+        <li>copyright 2026</li>
+        <li>Django Framework</li>
+      <ul>
+    </footer>
+
+  </body>
+</html>
